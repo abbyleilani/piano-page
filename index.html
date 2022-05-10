@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PIANO</title>
+    <style>
+      html {
+        min-height: 100%;
+      }
+      body {
+        background: linear-gradient(#ffe4d1, #c1e8ff);
+      }
+
+      h1 {
+        text-align: center;
+        font-family: Helvetica, Arial, sans-serif;
+        color: black;
+        margin: 0 auto;
+        padding: 25px 25px;
+        line-height: 25px;
+      }
+
+      h2 {
+        text-align: center;
+        font-weight: normal;
+        font-size: 18px;
+        color: black;
+      }
+      p {
+        text-align: center;
+        margin: 25px auto;
+        max-width: 400px;
+        color: black;
+      }
+
+      a {
+        color: black;
+      }
+
+      img {
+        display: block;
+        width: 300px;
+        margin: 75px auto;
+        padding: 40px 25px;
+        border: 5px solid black;
+        line-height: 20px;
+      }
+
+      Button {
+        display: block;
+        color: black;
+        font-size: 12px;
+        font-family: Helvetica, Arial, sans-serif;
+        background: transparent;
+        margin: 0 auto 30px;
+        padding: 20px 30px;
+        border: 1px solid black;
+        border-radius: 10px 10px;
+        box-shadow: 5px 5px 10px rgb(0, 0, 0.3);
+        transition: all 200ms ease-in-out;
+      }
+
+      button:hover {
+        color: #fff;
+        background: rgb(17, 133, 196);
+        cursor: pointer;
+      }
+
+      div {
+        text-align: center;
+        margin: 0 auto;
+        padding: 10px 10px;
+      }
+
+      .user {
+        color: #1185c4;
+        font-weight: normal;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>P I A N O</h1>
+    <h2>
+      <em
+        >"The intrinsic value of music is its own perfection" - Virgil
+        Thompson</em
+      >
+    </h2>
+    <hr />
+    <p>
+      The word "piano" is a shortened form of pianoforte, the Italian term for
+      the early 1700s versions of the instrument, which in turn derives from
+      clavicembalo col piano e forte (key cimbalom with quieter and louder) and
+      fortepiano. The Italian musical terms piano and forte indicate "soft" and
+      "loud" respectively,in this context referring to the variations in volume
+      (i.e., loudness) produced in response to a pianist's touch or pressure on
+      the keys: the greater the velocity of a key press, the greater the force
+      of the hammer hitting the strings, and the louder the sound of the note
+      produced and the stronger the attack. The name was created as a contrast
+      to harpsichord, a musical instrument that does not allow variation in
+      volume; compared to the harpsichord, the first fortepianos in the 1700s
+      had a quieter sound and smaller dynamic range.
+      <br />
+      <a
+        href="https://www.yamaha.com/en/musical_instrument_guide/piano/structure/"
+        target="_blank"
+      >
+        Learn the history of the piano here
+      </a>
+      <a
+        href="https://www.youtube.com/watch?v=FgnE25-kvyk&t=1192s"
+        target="_blank"
+      >
+        <br />
+        Listen to the piano here
+      </a>
+    </p>
+    <img src = https://www.renoir.net/images/paintings/woman-at-the-piano.jpg />
+    <button><strong>PIANO LESSON INQUIRY</strong></button>
+    <div>
+      <strong>
+        <em>
+          coded by <span class="user"> Abbygayle Baker</span>
+          <span> Instragram: </span>
+          <span class="user"> abby.leilani</span></em
+        >
+      </strong>
+    </div>
+    <p>
+      <a href="https://github.com/abbyleilani/piano-project" target="_blank"
+        >Open source code</a
+      >
+    </p>
+    <script>
+      function lesson() {
+        let name = prompt("What is your name?");
+        let email = prompt("What is your email address?");
+        let pianoQuestion = prompt("Do you play piano?");
+
+        if (pianoQuestion === "yes" || pianoQuestion === "Yes") {
+          alert(
+            "Wonderful, " +
+              name +
+              "! Enjoy the playlist of 🎹 music sent to your email."
+          );
+        } else {
+          alert(
+            "Ready to start you piano journey, " +
+              name +
+              "? We have sent you an email regarding 🎹 lessons."
+          );
+        }
+      }
+
+      let lessonbutton = document.querySelector("button");
+      lessonbutton.addEventListener("click", lesson);
+    </script>
+  </body>
+</html>
